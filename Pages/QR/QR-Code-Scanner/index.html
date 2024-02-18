@@ -6,8 +6,36 @@
     <title>QR Code Scanner</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .mainwebsite{
+            position: absolute;
+            top: 5%;
+            left: 41.5%;
+            z-index: 1000;
+            text-transform: capitalize;
+            margin: 20px 0;
+            padding-top: 1rem;
+            color: #000000;
+            font-size: large;
+            text-decoration: none;
+            i {
+                margin-right: .3rem;
+            }
+        }
+        @media screen and (max-width: 759px) {
+            .mainwebsite {
+                left: 9rem;
+            }
+        }
+        i {
+            font-family: FontAwesome;
+            font-style: normal;
+        }
+    </style>
+<link rel="stylesheet" href="/css/font-awesome.css">
 </head>
 <body>
+    <a href="/index.html" class="mainwebsite"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to main Website</a>
     <div class="wrapper">
         <form action="#">
             <input type="file" hidden>

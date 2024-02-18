@@ -11,6 +11,7 @@
 }
 body{
     background: #2F363E;
+    display: flex;
 }
 .container{
     position: relative;
