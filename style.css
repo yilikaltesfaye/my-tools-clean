@@ -11,53 +11,6 @@
 body{
     min-height: 100vh;
 }
-.background {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -9999;
-    height: 100vh;
-    .color-1 {
-        height: 10%;
-        background: #b3f0ff;
-    }
-    .color-2 {
-        height: 10%;
-        background: #96ccda;
-    }
-    .color-3 {
-        height: 10%;
-        background: #8cbeca;
-    }
-    .color-4 {
-        height: 10%;
-        background: #79a6b1;
-    }
-    .color-5 {
-        height: 10%;
-        background: #527179;
-    }
-    .color-6 {
-        height: 10%;
-        background: #364e53;
-    }
-    .color-7 {
-        height: 10%;
-        background: #1f2d31;
-    }
-    .color-8 {
-        height: 10%;
-        background: #151e20;
-    }
-    .color-9 {
-        height: 10%;
-        background: #0b1011;
-    }
-    .color-10 {
-        height: 10%;
-        background: #000000;
-    }
-}
 nav {
     height: 9vh;
     position: relative;
@@ -73,7 +26,7 @@ nav {
     border-right: 2px solid #b3f0ff;
     border-top: 2px solid #b3f0ff;
     p {
-        padding-left: 2rem;
+        padding-left: 2%;
         position: absolute;
         left: 3%;
         color: #000000;
@@ -112,7 +65,7 @@ nav {
     padding-right: 5vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     .tool {
         text-align: center;
@@ -135,27 +88,68 @@ nav {
         }
     }
 }
-@media screen and (max-width: 730px) {
-    .background {
-        height: 129%;
-    }
+@media screen and (max-width: 731px) {
+    
     nav {
         margin-top: .3rem;
     }
 }
 @media screen and (max-width: 570px) {
-    .background {
-        height: 182%;
-    }
+    
     nav {
         margin-top: .9rem;
     }
 }
-@media screen and (max-width: 400px) {
-    .background {
-        height: 319%;
+.contact {
+    top: 30%;
+    left: 35%;
+    border: none;
+    background-color: #4a98f7;
+    z-index: 1000;
+    width: 60vh;
+    height: 60vh;
+    position: absolute;
+    display: none;
+    border-radius: 25px;
+    p {
+        padding: 0 2em;
     }
-    nav {
-        margin-top: .9rem;
+    ul {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        z-index: 1000;
+        li {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.contact.active {
+    display: block;
+}
+.contactheader {
+    width: 51vh;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        padding-top: .9em;
+        padding-left: 2em;
+        text-transform: capitalize;
+    }
+    .x {
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        font-family: monospace;
+        font-weight: 900;
+        border-radius: 15px;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        border: none;
+        &:hover {
+            color: inherit;
+        }
     }
 }
